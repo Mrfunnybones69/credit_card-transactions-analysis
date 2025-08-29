@@ -1,0 +1,80 @@
+📊 Credit Card Customer Segmentation
+🔹 Problem Statement
+
+Banks struggle to understand different types of credit card users.
+Not all customers behave the same — some spend heavily on one-off purchases, some prefer installments, while others rarely use their credit card.
+
+Goal: Segment customers into distinct groups to enable personalized marketing strategies, cross-sell opportunities, and churn reduction.
+
+🔹 Dataset
+
+Source: Public dataset of credit card transactions & behavior.
+
+Features include:
+
+Balance, Purchases, One-off vs Installment Purchases
+
+Cash Advances & Frequency
+
+Credit Limit
+
+Payments & Minimum Payments
+
+Tenure
+
+🔹 Approach
+
+EDA (Exploratory Data Analysis)
+
+Purchase patterns (One-off, Installments, Both)
+
+Spending frequency & credit utilization
+
+Missing values imputed with column means
+
+Feature Engineering
+
+Added Purchase_Type column (One-off / Installment / Both).
+
+Selected behavioral + financial features for clustering.
+
+Data Preprocessing
+
+Scaled features using StandardScaler.
+
+Reduced dimensions for visualization using PCA.
+
+Clustering (K-Means)
+
+Optimal cluster count determined via Elbow Method.
+
+Customers segmented into 4 key groups.
+
+🔹 Insights from Clusters
+
+Cluster 0 – Luxury Spenders 💳
+High one-off purchases, high credit limits, full repayments.
+
+Cluster 1 – Installment Lovers 🛒
+Prefer installment purchases, moderate balance, steady payments.
+
+Cluster 2 – Cash Advance Users 💵
+Heavy reliance on cash advances, irregular repayments.
+
+Cluster 3 – Conservative Users 📉
+Low spending, low frequency, minimal credit usage.
+
+🔹 Business Impact
+
+Banks can leverage segmentation to:
+✔ Design tailored offers (cashback, EMI, rewards).
+✔ Identify high-risk customers (default-prone cash advance users).
+✔ Improve customer retention with personalized experiences.
+
+🔹 Tech Stack
+
+Python (Pandas, NumPy, Matplotlib, Seaborn)
+
+Scikit-learn (K-Means, StandardScaler, PCA)
+
+Jupyter Notebook
